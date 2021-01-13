@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Pi_Style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="nav">
+        <div class="arrow">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <a href="../../index.html"><span id="goBack">Go back</span></a>
+    </div>
+    <h1 id="pi">Estimate PI</h1>
+    <div class="canvas-container">
+        <canvas id="canv" width=450 height=450 ></canvas>
+    </div>
+
+    <div class="control">
+        <div id="estimatePi-Btn">Estimate PI</div>
+        <input type="range" onchange="numChanged()" name="numberRange" id="numberRange" min="30" max="21000" step="1" value="300">
+        <label for="numberRange" id="numberRangeLabel"></label>
+    </div>
+
+    <script src="Pi_Script.js"></script>
+</body>
+</html>
