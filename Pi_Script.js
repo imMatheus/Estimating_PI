@@ -87,16 +87,8 @@ const numChanged = () => {
     document.getElementById("numberRangeLabel").innerText = num
 }
 
-//we use x to make the frame rate decent. As we we are going to call the numChanged function
-//everytime "numberRange" gets moved it will be hard for the computer to manage
-//so we only call the function every other time
-let x = 0
 document.getElementById("numberRange").addEventListener("input", (event) => {
-    if (x % 2 === 0) {
-        numChanged()
-    }
     document.getElementById("numberRangeLabel").innerText = document.getElementById("numberRange").value
-    x++
 })
 
 numChanged()
